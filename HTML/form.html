@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <!--
+        FORM:
+        User se data/input lene ke liye form banate hain.
+    -->
+
+    <form>
+
+        <!-- LABEL: Input ka naam batata hai -->
+        <label for="name">Name:</label>
+
+        <!-- INPUT: User se data lene ke liye -->
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <br><br>
+
+
+        <!--
+            PASSWORD:
+            Password ko hide karke show karta hai.
+        -->
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="Enter password">
+
+        <br><br>
+
+
+        <!--
+            EMAIL:
+            Email address lene ke liye.
+        -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <br><br>
+
+
+        <!--
+            NUMBER:
+            Numbers input karne ke liye.
+            min aur max limit set karte hain.
+        -->
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="1" max="100">
+
+        <br><br>
+
+
+        <!--
+            RADIO:
+            Multiple options mein se sirf ONE select karne ke liye.
+            Same name hona zaroori hai.
+        -->
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <br><br>
+
+
+        <!--
+            CHECKBOX:
+            Multiple options select karne ke liye.
+        -->
+
+        <label>Skills:</label>
+
+        <input type="checkbox" name="skill" value="java">
+        Java
+
+        <input type="checkbox" name="skill" value="html">
+        HTML
+
+        <input type="checkbox" name="skill" value="css">
+        CSS
+
+        <br><br>
+
+
+        <!--
+            DATE:
+            Date select karne ke liye.
+        -->
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <br><br>
+
+
+        <!--
+            FILE:
+            Computer se file upload/select karne ke liye.
+        -->
+
+        <label>Resume:</label>
+        <input type="file">
+
+        <br><br>
+
+
+        <!--
+            TEXTAREA:
+            Long text jaise address/message ke liye.
+        -->
+
+        <label>Address:</label>
+
+        <br>
+
+        <textarea
+            rows="4"
+            cols="30"
+            placeholder="Enter your address">
+        </textarea>
+
+        <br><br>
+
+
+        <!--
+            SELECT:
+            Dropdown banane ke liye.
+            
+            OPTION:
+            Dropdown ke andar options.
+        -->
+
+        <label>Course:</label>
+
+        <select name="course">
+
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="web">Web Development</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!--
+            REQUIRED:
+            Field ko compulsory bana deta hai.
+        -->
+
+        <label>Username:</label>
+        <input type="text" required>
+
+        <br><br>
+
+
+        <!--
+            BUTTON:
+            Submit form ko submit karta hai.
+            Reset form ko clear karta hai.
+        -->
+
+        <button type="submit">Submit</button>
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
